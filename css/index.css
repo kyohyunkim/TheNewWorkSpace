@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600&display=swap");
+@font-face {
+  font-family: Chomsky;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/Chomsky.otf) format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  /*
+    background-image: url(/img/bg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    width:100%;height:100vh;
+    */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(99%, #000));
+  background-image: linear-gradient(180deg, #fff 0%, #000 99%);
+  -webkit-box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+}
+
+.cursor__inner {
+  z-index: 999999;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.cursor__inner--dot {
+  width: 6px;
+  height: 6px;
+  background: #000;
+}
+
+.cursor__inner--circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+}
+
+header .header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0 15px;
+  height: 55px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .header_wrap #current_date, header .header_wrap .weather, header .header_wrap #clock, header .header_wrap #apm {
+  font-family: 'Assistant', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+header .weather .City {
+  text-align: right;
+  padding: 0 0 4px;
+  letter-spacing: 1.8px;
+}
+
+header .weather .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .weather .flex div {
+  padding-left: 10px;
+}
+
+header .title {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+header .title a {
+  font-family: Chomsky;
+  font-size: 60px;
+}
+
+header .header_cate {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #000;
+  position: relative;
+  padding: 15px 0;
+}
+
+header .header_cate::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: -5px;
+}
+
+header .header_cate ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+header .header_cate ul li a {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+header .header_cate ul li a:hover {
+  font-weight: 500;
+  color: #D0021B;
+}
+
+header .header_cate ul li span {
+  position: absolute;
+  color: #777;
+}
+
+main .wrap {
+  padding-top: 40px;
+}
+
+main .wrap ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrap ul li {
+  width: 32%;
+  height: 300px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+main .wrap ul .pro1 {
+  background-image: url("/img/cherry.jpg");
+  width: 32%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main .wrap ul .pro2 {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .wrap ul .pro2 .eye_link {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .wrap ul .pro2 .eye_link .eye {
+  width: 45%;
+  position: relative;
+}
+
+main .wrap ul .pro2 .eye_link .svg-1 {
+  position: absolute;
+}
+/*# sourceMappingURL=index.css.map */
