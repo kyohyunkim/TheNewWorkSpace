@@ -1,5 +1,5 @@
 //wave
-$('.pro1').ripples({
+$('.thum').ripples({
     resolution: 1200,
     perturbance:0.05,
 });

@@ -116,10 +116,6 @@ header{
             li{
                 a{padding-right:10px;cursor: pointer;}
                 a:hover{font-weight: 500;color:#D0021B;}
-                span{
-                    position: absolute;
-                    color:#777;
-                }
             }
         }
     }
@@ -137,14 +133,17 @@ main{
                 width:32%;
                 height: 300px;
                 border: 1px solid #000;
-                overflow: hidden;
             }
             .pro1{
+                position: relative;
+                .thum{
                 background-image: url("https://kyohyunkim.github.io/TheNewWorkSpace/img/cherry.jpg");
-                width:32%;height:300px;
+                width:100%;height:300px;
                 background-repeat: no-repeat;
                 background-position: center;
+                overflow:hidden;
                 filter: grayscale(100%);
+                }
             }
             .pro2{
                 background-color: #000;
