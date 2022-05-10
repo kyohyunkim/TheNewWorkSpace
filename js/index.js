@@ -1,7 +1,7 @@
 //wave
 $('.pro1').ripples({
     resolution: 1200,
-    perturbance:0.01,
+    perturbance:0.05,
 });
 
 // 서울 날씨 
