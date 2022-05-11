@@ -14,13 +14,6 @@
 }
 
 body {
-  /*
-    background-image: url(/img/bg.jpg);
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-    width:100%;height:100vh;
-    */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -29,6 +22,15 @@ body {
   position: relative;
   overflow-x: hidden;
   cursor: none;
+}
+
+body.active {
+  background-image: url("https://kyohyunkim.github.io/TheNewWorkSpace/img/bg.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -78,6 +80,39 @@ header {
   position: relative;
 }
 
+header .onoff {
+  position: relative;
+}
+
+header .onoff ul {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  width: 30px;
+  height: 15px;
+  cursor: pointer;
+}
+
+header .onoff ul li {
+  background-color: #000;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .onoff ul li.active {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+  background-color: #d0021b;
+}
+
 header .header_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +120,7 @@ header .header_wrap {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 0 15px;
+  padding: 50px 0 20px;
   height: 55px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -127,10 +162,15 @@ header .title {
 header .title a {
   font-family: Chomsky;
   font-size: 60px;
+  cursor: pointer;
+}
+
+header .title a .red.active {
+  color: #d0021b;
 }
 
 header .header_cate {
-  border-top: 1px solid #d3d3d3;
+  border-top: 1px solid #b5b5b5;
   border-bottom: 1px solid #000;
   position: relative;
   padding: 15px 0;

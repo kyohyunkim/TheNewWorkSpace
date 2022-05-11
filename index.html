@@ -7,12 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="css/index.css" rel="stylesheet">
-    <script defer src="js/index.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script defer src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
-    <script src="js/jquery.ripples.js"></script>
+    
 </head>
 <body>
     <div class="cursor">
@@ -21,22 +16,30 @@
     </div>
     <div class="wrap">
         <header>
+            
             <div class="header_wrap">
-                <div class="">
+                <div>
                 <div id="current_date"></div>
                 <span id="clock">clock</span>
                 <span id="apm">ampm</span>
                 </div>
-                <div class = 'weather'>
+                <div class="onoff">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- <div class = 'weather'>
                     <div class = 'City'></div>
                     <div class="flex">
                         <div class = 'CurrTemp'></div> 
                         <div class = 'CurrIcon'></div> 
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="title">
-                <a data-hover>The New Work Space</a>
+            <div class="title" onclick="window.scrollTo(0,0);" data-hover>
+                <a>
+                    <span class="red">T</span>he <span class="red">N</span>ew <span class="red">W</span>ork <span class="red">S</span>pace
+                </a>
             </div>
             <div class="header_cate">
                 <ul>
@@ -67,7 +70,7 @@
                                 <img class="svg-2" src="img/eyeline2.svg">
                             </div>
                         </div>
-                        <div class="thum eye_link" id="eye" style="cursor: pointer;">
+                        <div class="thum eye_link" id="eye">
                             <div class="eye">
                                 <img class="svg-1" src="img/eye.svg">
                                 <img class="svg-2" src="img/eyeline2.svg">
@@ -77,7 +80,7 @@
                                 <img class="svg-2" src="img/eyeline2.svg">
                             </div>
                         </div>
-                        <div class="thum eye_link" id="eye" style="cursor: pointer;">
+                        <div class="thum eye_link" id="eye">
                             <div class="eye">
                                 <img class="svg-1" src="img/eye.svg">
                                 <img class="svg-2" src="img/eyeline2.svg">
@@ -97,5 +100,13 @@
         </main>
         <footer></footer>
     </div>
+
+
+    <script defer src="js/index.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script> -->
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script defer src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
+    <script src="js/jquery.ripples.js"></script>
 </body>
 </html>
