@@ -235,9 +235,10 @@ main .wrap ul .pro1 {
 }
 
 main .wrap ul .pro1 .thum {
-  background-image: url("https://kyohyunkim.github.io/TheNewWorkSpace/img/cherry.jpg");
+  background-image: url("https://he-is.co.kr/web/upload/pc/main/0721/joint_bg.png");
   width: 100%;
   height: 300px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
@@ -246,7 +247,13 @@ main .wrap ul .pro1 .thum {
 }
 
 main .wrap ul .pro2 {
-  background-color: #000;
+  background-image: url("https://she-is.co.kr/web/upload/pc/main/0721/main_2p_1.png");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,5 +282,16 @@ main .wrap ul .pro2 .eye_link .eye {
 
 main .wrap ul .pro2 .eye_link .svg-1 {
   position: absolute;
+}
+
+main .wrap ul .pro3 {
+  background-color: #c3c3c3;
+  background-image: url("https://chosunboutique.com/web/product/medium/202208/f437e0738554aeeba35f55207888e997.png");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 /*# sourceMappingURL=index.css.map */
