@@ -153,38 +153,36 @@ main{
             width:100%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            flex-wrap: wrap;
             .box{
                 width:32%;
-                height: 300px;
-                border: 1px solid #000;
+                height:100%;
+                margin-bottom: 50px;
+                .thum{
+                    border: 1px solid #000;height: 300px;
+                    overflow:hidden;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position:center;
+                    filter: grayscale(100%);
+                    &:hover{filter: grayscale(0%);}
+                    width:100%;
+                }
             }
+            
             .pro1{
                 position: relative;
                 .thum{
                     background-image: url("https://he-is.co.kr/web/upload/pc/main/0721/joint_bg.png");
-                    width:100%;height:300px;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position:center;
-                    overflow:hidden;
-                    filter: grayscale(100%);
-                    &:hover{filter: grayscale(0%);}
                 }
                 
             }
             .pro2{
                 .thum{
                     background-image: url("https://she-is.co.kr/web/upload/pc/main/0721/main_2p_1.png");
-                    overflow:hidden;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position:center;
-                    filter: grayscale(100%);
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    height: 100%;
                     .eye_link{
                         padding: 10px;
                         display: flex;
@@ -195,20 +193,21 @@ main{
                             position: absolute;
                         }
                     }
-                    &:hover{filter: grayscale(0%);}
                 }
             }
             .pro3{
                 .thum{
                     background-image: url("https://chosunboutique.com/web/product/extra/small/202212/efcb8c302d9ed4aa532eca1926abd502.jpg");
-                    overflow:hidden;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position:center;
-                    filter: grayscale(100%);
-                    &:hover{filter: grayscale(0%);}
-                    width:100%;height:100%;
                 }
+            }
+            .pro4{
+                // .thum{background-image: url("https://neuralnapse.com/web/upload/main/main_sec2_bg1.png");}
+            }
+            .pro5{
+                // .thum{background-image: url("/img/coretics.png");}
+            }
+            .pro6{
+                // .thum{background-image: url("https://a-shop.kr/web/upload/brand/brand2.png");}
             }
             
         }

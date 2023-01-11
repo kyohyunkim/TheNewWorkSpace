@@ -82,6 +82,7 @@ header {
 
 header .onoff {
   position: relative;
+  margin-bottom: 10px;
 }
 
 header .onoff ul {
@@ -219,15 +220,31 @@ main .wrap .content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .wrap .content .box {
   width: 32%;
-  height: 300px;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+main .wrap .content .box .thum {
   border: 1px solid #000;
+  height: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 100%;
+}
+
+main .wrap .content .box .thum:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 main .wrap .content .pro1 {
@@ -236,29 +253,10 @@ main .wrap .content .pro1 {
 
 main .wrap .content .pro1 .thum {
   background-image: url("https://he-is.co.kr/web/upload/pc/main/0721/joint_bg.png");
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-main .wrap .content .pro1 .thum:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
 }
 
 main .wrap .content .pro2 .thum {
   background-image: url("https://she-is.co.kr/web/upload/pc/main/0721/main_2p_1.png");
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +266,6 @@ main .wrap .content .pro2 .thum {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 100%;
 }
 
 main .wrap .content .pro2 .thum .eye_link {
@@ -290,25 +287,7 @@ main .wrap .content .pro2 .thum .eye_link .svg-1 {
   position: absolute;
 }
 
-main .wrap .content .pro2 .thum:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-}
-
 main .wrap .content .pro3 .thum {
   background-image: url("https://chosunboutique.com/web/product/extra/small/202212/efcb8c302d9ed4aa532eca1926abd502.jpg");
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  width: 100%;
-  height: 100%;
-}
-
-main .wrap .content .pro3 .thum:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
 }
 /*# sourceMappingURL=index.css.map */
