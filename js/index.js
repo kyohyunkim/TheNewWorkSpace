@@ -30,7 +30,7 @@ $(document).ready(function() {
     '50' : 'fas fa-smog'
     };
     $.ajax({
-    url:'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=4888f616df00bc6d6022afb50053da80&units=metric',
+    url:'https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=4888f616df00bc6d6022afb50053da80&units=metric',
     dataType:'json',
     type:'GET',
     success:function(data){
