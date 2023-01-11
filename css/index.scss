@@ -162,14 +162,16 @@ main{
             .pro1{
                 position: relative;
                 .thum{
-                background-image: url("https://he-is.co.kr/web/upload/pc/main/0721/joint_bg.png");
-                width:100%;height:300px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position:center;
-                overflow:hidden;
-                filter: grayscale(100%);
+                    background-image: url("https://he-is.co.kr/web/upload/pc/main/0721/joint_bg.png");
+                    width:100%;height:300px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position:center;
+                    overflow:hidden;
+                    filter: grayscale(100%);
+                    &:hover{filter: grayscale(0%);}
                 }
+                
             }
             .pro2{
                 .thum{
@@ -193,16 +195,20 @@ main{
                             position: absolute;
                         }
                     }
+                    &:hover{filter: grayscale(0%);}
                 }
             }
             .pro3{
-                background-color: #c3c3c3;
-                background-image: url("https://chosunboutique.com/web/product/extra/small/202212/e3a628c0c2bd77b9198362ceaa6a8a08.jpg");
-                overflow:hidden;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position:center;
-                filter: grayscale(100%);
+                .thum{
+                    background-image: url("https://chosunboutique.com/web/product/extra/small/202212/efcb8c302d9ed4aa532eca1926abd502.jpg");
+                    overflow:hidden;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position:center;
+                    filter: grayscale(100%);
+                    &:hover{filter: grayscale(0%);}
+                    width:100%;height:100%;
+                }
             }
             
         }

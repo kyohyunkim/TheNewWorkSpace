@@ -246,6 +246,11 @@ main .wrap .content .pro1 .thum {
           filter: grayscale(100%);
 }
 
+main .wrap .content .pro1 .thum:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
 main .wrap .content .pro2 .thum {
   background-image: url("https://she-is.co.kr/web/upload/pc/main/0721/main_2p_1.png");
   overflow: hidden;
@@ -285,14 +290,25 @@ main .wrap .content .pro2 .thum .eye_link .svg-1 {
   position: absolute;
 }
 
-main .wrap .content .pro3 {
-  background-color: #c3c3c3;
-  background-image: url("https://chosunboutique.com/web/product/extra/small/202212/e3a628c0c2bd77b9198362ceaa6a8a08.jpg");
+main .wrap .content .pro2 .thum:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+main .wrap .content .pro3 .thum {
+  background-image: url("https://chosunboutique.com/web/product/extra/small/202212/efcb8c302d9ed4aa532eca1926abd502.jpg");
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+}
+
+main .wrap .content .pro3 .thum:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 /*# sourceMappingURL=index.css.map */
