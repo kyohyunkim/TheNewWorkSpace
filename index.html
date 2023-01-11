@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="css/index.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -19,22 +20,24 @@
             
             <div class="header_wrap">
                 <div>
-                <div id="current_date"></div>
-                <span id="clock">clock</span>
-                <span id="apm">ampm</span>
+                    <div id="current_date"></div>
+                    <span id="clock">clock</span>
+                    <span id="apm">ampm</span>
                 </div>
-                <div class="onoff" data-hover>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-                <!-- <div class = 'weather'>
-                    <div class = 'City'></div>
-                    <div class="flex">
-                        <div class = 'CurrTemp'></div> 
-                        <div class = 'CurrIcon'></div> 
+                <div>
+                    <div class="onoff" data-hover>
+                        <ul>
+                            <li></li>
+                        </ul>
                     </div>
-                </div> -->
+                    <div class = 'weather'>
+                        <div class = 'City'></div>
+                        <div class="flex">
+                            <div class = 'CurrTemp'></div> 
+                            <div class = 'CurrIcon'></div> 
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="title" onclick="window.scrollTo(0,0);" data-hover>
                 <a>
@@ -55,43 +58,45 @@
         </div>
         <main>
             <div class="wrap">
-                <ul>
-                    <li class="pro1" data-hover>
+                <ul class="content">
+                    <li class="pro1 box" data-hover>
                         <div class="thum"></div>
                     </li>
-                    <li class="pro2 eyeLi" data-hover>
-                        <!--div class="thum eye_link" id="eye">
-                            <div class="eye">
-                                <img class="svg-1" src="img/eye.svg">
-                                <img class="svg-2" src="img/eyeline2.svg">
-                            </div>
-                            <div class="eye">
-                                <img class="svg-1" src="img/eye.svg">
-                                <img class="svg-2" src="img/eyeline2.svg">
-                            </div>
-                        </div>
-                        <div class="thum eye_link" id="eye">
-                            <div class="eye">
-                                <img class="svg-1" src="img/eye.svg">
-                                <img class="svg-2" src="img/eyeline2.svg">
-                            </div>
-                            <div class="eye">
-                                <img class="svg-1" src="img/eye.svg">
-                                <img class="svg-2" src="img/eyeline2.svg">
-                            </div>
-                        </div>
-                        <div-- class="thum eye_link" id="eye">
-                            <div class="eye">
-                                <img class="svg-1" src="img/eye.svg">
-                                <img class="svg-2" src="img/eyeline2.svg">
-                            </div>
-                            <div class="eye">
-                                <img class="svg-1" src="img/eye.svg">
-                                <img class="svg-2" src="img/eyeline2.svg">
-                            </div>
-                        </div-->
+                    <li class="pro2 eyeLi box" data-hover >
+                        <ul class="thum">
+                            <li class="eye_link" id="eye">
+                                <div class="eye">
+                                    <img class="svg-1" src="img/eye.svg">
+                                    <img class="svg-2" src="img/eyeline2.svg">
+                                </div>
+                                <div class="eye">
+                                    <img class="svg-1" src="img/eye.svg">
+                                    <img class="svg-2" src="img/eyeline2.svg">
+                                </div>
+                            </li>
+                            <li class="eye_link" id="eye">
+                                <div class="eye">
+                                    <img class="svg-1" src="img/eye.svg">
+                                    <img class="svg-2" src="img/eyeline2.svg">
+                                </div>
+                                <div class="eye">
+                                    <img class="svg-1" src="img/eye.svg">
+                                    <img class="svg-2" src="img/eyeline2.svg">
+                                </div>
+                            </li>
+                            <li class="eye_link" id="eye">
+                                <div class="eye">
+                                    <img class="svg-1" src="img/eye.svg">
+                                    <img class="svg-2" src="img/eyeline2.svg">
+                                </div>
+                                <div class="eye">
+                                    <img class="svg-1" src="img/eye.svg">
+                                    <img class="svg-2" src="img/eyeline2.svg">
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="pro3" data-hover>
+                    <li class="pro3 box" data-hover>
                         
                     </li>
                 </ul>
@@ -102,10 +107,10 @@
 
 
     <script defer src="js/index.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script> -->
     <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="js/jquery.min.js"></script>
-    <script defer src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
-    <script src="js/jquery.ripples.js"></script>
+    <!-- <script defer src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script> -->
+    <!-- <script src="js/jquery.ripples.js"></script> -->
 </body>
 </html>

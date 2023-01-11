@@ -1,5 +1,5 @@
 //wave
-// $('.thum').ripples({
+// $('.pro1').ripples({
 //     resolution: 1200,
 //     perturbance:0.05,
 // });
@@ -16,33 +16,33 @@ onoff.addEventListener('click', ()=> {
 });
 
 // 서울 날씨 
-// $(document).ready(function() {
+$(document).ready(function() {
     
-//     let weatherIcon = {
-//     '01' : 'fas fa-sun',
-//     '02' : 'fas fa-cloud-sun',
-//     '03' : 'fas fa-cloud',
-//     '04' : 'fas fa-cloud-meatball',
-//     '09' : 'fas fa-cloud-sun-rain',
-//     '10' : 'fas fa-cloud-showers-heavy',
-//     '11' : 'fas fa-poo-storm',
-//     '13' : 'far fa-snowflake',
-//     '50' : 'fas fa-smog'
-//     };
-//     $.ajax({
-//     url:'http://api.openweathermap.org/data/2.5/weather?q=seoul&APPID=ee538e4ef0558df86ec8ca228598e2d2&units=metric',
-//     dataType:'json',
-//     type:'GET',
-//     success:function(data){
-//     var $Icon = (data.weather[0].icon).substr(0,2);
-//     var $Temp = Math.floor(data.main.temp) + 'º';
-//     var $city = data.name;
-//     $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] +'"></i>');
-//     $('.CurrTemp').prepend($Temp);
-//     $('.City').append($city);
-//     }
-//     })
-// }); 
+    let weatherIcon = {
+    '01' : 'fas fa-sun',
+    '02' : 'fas fa-cloud-sun',
+    '03' : 'fas fa-cloud',
+    '04' : 'fas fa-cloud-meatball',
+    '09' : 'fas fa-cloud-sun-rain',
+    '10' : 'fas fa-cloud-showers-heavy',
+    '11' : 'fas fa-poo-storm',
+    '13' : 'far fa-snowflake',
+    '50' : 'fas fa-smog'
+    };
+    $.ajax({
+    url:'http://api.openweathermap.org/data/2.5/weather?q=seoul&APPID=ee538e4ef0558df86ec8ca228598e2d2&units=metric',
+    dataType:'json',
+    type:'GET',
+    success:function(data){
+    var $Icon = (data.weather[0].icon).substr(0,2);
+    var $Temp = Math.floor(data.main.temp) + 'º';
+    var $city = data.name;
+    $('.CurrIcon').append('<i class="' + weatherIcon[$Icon] +'"></i>');
+    $('.CurrTemp').prepend($Temp);
+    $('.City').append($city);
+    }
+    })
+});  
 
 
 // 날짜 시간 분 초 실시간
@@ -89,52 +89,52 @@ setInterval(clock, 1000);
 
 
 //eye 기능
-// var pc = window.matchMedia("screen and (min-width: 1025px)");
-// if (pc.matches) {
+var pc = window.matchMedia("screen and (min-width: 1025px)");
+if (pc.matches) {
     
-// const main = document.querySelector('.pro2');
+const main = document.querySelector('.pro2');
 
-// function rotate (event) 
-// {
-//     const elImg = document.querySelectorAll('.svg-1');
-//     const x =event.clientX;
-//     const y = event.clientY;
-//     const w = window.innerWidth/2;
-//     const h = window.innerHeight/3;
-//     const kyo = x - w;
-//     const m = y - h;
-//     const img1 = (kyo / w)*30;
-//     const img2 = (m / h)*15;
+function rotate (event) 
+{
+    const elImg = document.querySelectorAll('.svg-1');
+    const x =event.clientX;
+    const y = event.clientY;
+    const w = window.innerWidth/2;
+    const h = window.innerHeight/3;
+    const kyo = x - w;
+    const m = y - h;
+    const img1 = (kyo / w)*30;
+    const img2 = (m / h)*15;
 
-//     for(i=0; i<elImg.length; i++){
-//     elImg[i].style.transform = `translateY(${img2}px) translateX(${img1}px)`;
-//     }
-// }
-// main.addEventListener("mousemove", function (event){
-// 	rotate (event)
-// });
+    for(i=0; i<elImg.length; i++){
+    elImg[i].style.transform = `translateY(${img2}px) translateX(${img1}px)`;
+    }
+}
+main.addEventListener("mousemove", function (event){
+	rotate (event)
+});
 
-// }else{
-//     const elEyeball = document.querySelector('.svg-1');
+}else{
+    const elEyeball = document.querySelector('.svg-1');
 
-//     let pos = {y:0, y2:0, state: '', eyeMove: true}
-//     let bbb = 0;
+    let pos = {y:0, y2:0, state: '', eyeMove: true}
+    let bbb = 0;
 
-//     window.addEventListener('scroll',function(){
+    window.addEventListener('scroll',function(){
 
-//         if(pos.eyeMove){
-//             elEyeball.style.transform = `translateX(${bbb}px)`;
-//             bbb += 1.5;
-//             if(bbb == 12) pos.eyeMove = false;
-//         }else{
-//             elEyeball.style.transform = `translateX(${bbb}px)`;
-//             bbb -= 1.5;
-//             if(bbb == -12) pos.eyeMove = true;
-//         }
+        if(pos.eyeMove){
+            elEyeball.style.transform = `translateX(${bbb}px)`;
+            bbb += 1.5;
+            if(bbb == 12) pos.eyeMove = false;
+        }else{
+            elEyeball.style.transform = `translateX(${bbb}px)`;
+            bbb -= 1.5;
+            if(bbb == -12) pos.eyeMove = true;
+        }
 
-//     })
+    })
 
-// }
+}
 
 const mobill = window.matchMedia("screen and (max-width: 767px)");
 const right = document.querySelector('.right');

@@ -211,7 +211,7 @@ main .wrap {
   padding-top: 40px;
 }
 
-main .wrap ul {
+main .wrap .content {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,17 +224,17 @@ main .wrap ul {
           align-items: center;
 }
 
-main .wrap ul li {
+main .wrap .content .box {
   width: 32%;
   height: 300px;
   border: 1px solid #000;
 }
 
-main .wrap ul .pro1 {
+main .wrap .content .pro1 {
   position: relative;
 }
 
-main .wrap ul .pro1 .thum {
+main .wrap .content .pro1 .thum {
   background-image: url("https://he-is.co.kr/web/upload/pc/main/0721/joint_bg.png");
   width: 100%;
   height: 300px;
@@ -246,7 +246,7 @@ main .wrap ul .pro1 .thum {
           filter: grayscale(100%);
 }
 
-main .wrap ul .pro2 {
+main .wrap .content .pro2 .thum {
   background-image: url("https://she-is.co.kr/web/upload/pc/main/0721/main_2p_1.png");
   overflow: hidden;
   background-size: cover;
@@ -263,9 +263,10 @@ main .wrap ul .pro2 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 100%;
 }
 
-main .wrap ul .pro2 .eye_link {
+main .wrap .content .pro2 .thum .eye_link {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,18 +276,18 @@ main .wrap ul .pro2 .eye_link {
           justify-content: space-between;
 }
 
-main .wrap ul .pro2 .eye_link .eye {
+main .wrap .content .pro2 .thum .eye_link .eye {
   width: 45%;
   position: relative;
 }
 
-main .wrap ul .pro2 .eye_link .svg-1 {
+main .wrap .content .pro2 .thum .eye_link .svg-1 {
   position: absolute;
 }
 
-main .wrap ul .pro3 {
+main .wrap .content .pro3 {
   background-color: #c3c3c3;
-  background-image: url("https://chosunboutique.com/web/product/medium/202208/f437e0738554aeeba35f55207888e997.png");
+  background-image: url("https://chosunboutique.com/web/product/extra/small/202212/e3a628c0c2bd77b9198362ceaa6a8a08.jpg");
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
